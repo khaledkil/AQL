@@ -82,7 +82,7 @@ public class Exo4Test {
         ArgumentCaptor<Integer> captor = ArgumentCaptor.forClass(Integer.class);
         when(joueurMock.mise()).thenReturn(70);
         when(de1Mock.lancer()).thenReturn(5);
-        when(de2Mock.lancer()).thenReturn(2); // 5+2=7
+        when(de2Mock.lancer()).thenReturn(2);
         when(banqueMock.est_solvable()).thenReturn(true);
 
         jeu.jouer(joueurMock, de1Mock, de2Mock);

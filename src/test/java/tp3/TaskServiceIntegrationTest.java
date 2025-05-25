@@ -22,7 +22,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class TaskServiceIntegrationTest {
 
     // L'instance MySQLContainer fournie par TestContainers
-    private static MySQLContainer<?> mysqlContainer = new MySQLContainer<>("mysql:latest")
+    private static MySQLContainer<?> mysqlContainer = new MySQLContainer<>("mysql:8.0.30")
             .withDatabaseName("testdb")
             .withUsername("root")
             .withPassword("password")

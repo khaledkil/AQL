@@ -2,7 +2,6 @@ package org.example;
 
 
 public class Palindrome {
-
     public static boolean isPalindrome(String s) {
         if (s == null) {
             throw new NullPointerException("String must not be null");
@@ -14,8 +13,8 @@ public class Palindrome {
             if (s.charAt(i) != s.charAt(j)) {
                 return false;
             }
-            j++;
-            i--;
+            i++;  // Fixed: should increment i
+            j--;  // Fixed: should decrement j
         }
         return true;
     }
